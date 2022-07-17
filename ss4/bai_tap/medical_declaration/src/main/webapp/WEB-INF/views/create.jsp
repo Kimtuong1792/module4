@@ -3,7 +3,9 @@
 <html>
 <head>
     <title>Tờ khai y tế</title>
-    <link rel="stylesheet" href="bootstrap-5.0.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 </head>
 <body>
 <div class="container-fluid">
@@ -21,12 +23,13 @@
 </div>
 
 <div class="container-fluid mt-5">
-    <form:form modelAttribute="medicalDeclaration" method="post" action="/create">
+
+    <form:form modelAttribute="createMedical" method="post" action="/create">
         <div class="row mt-2">
             <div class="col-lg-12">
                 <label class="fw-bold">Họ tên (ghi chữ IN HOA) </label>
                 <label class="text-danger">(*)</label>
-                <form:input path="name" cssClass="form-control" required="true" pattern="[A-Z\\s]+"/>
+                <form:input path="name" cssClass="form-control" required = "true" pattern="[A-Z\\s]+"/>
             </div>
         </div>
 
@@ -34,17 +37,17 @@
             <div class="col-lg-4">
                 <label class="fw-bold">Năm sinh </label>
                 <label class="text-danger">(*)</label>
-                <form:select path="birthDay" items="${birthDay}" cssClass="form-select" required="true"/>
+                <form:select path="birthday" items="${birthdayList}" cssClass="form-select" required="true"/>
             </div>
             <div class="col-lg-4">
                 <label class="fw-bold">Giới tính </label>
                 <label class="text-danger">(*)</label>
-                <form:select path="gender" items="${gender}" cssClass="form-select" required="true"/>
+                <form:select path="gender" items="${genderList}" cssClass="form-select" required="true"/>
             </div>
             <div class="col-lg-4">
                 <label class="fw-bold">Quốc tịch </label>
                 <label class="text-danger">(*)</label>
-                <form:select path="country" items="${country}" cssClass="form-select" required="true"/>
+                <form:select path="country" items="${countryList}" cssClass="form-select" required="true"/>
             </div>
         </div>
 
@@ -60,19 +63,18 @@
             <div class="col-lg-12">
                 <label class="fw-bold">Thông tin đi lại </label>
                 <label class="text-danger">(*)</label>
-                <form:radiobuttons path="vehicle" items="${vehicle}" cssClass="form-check-inline fw-bold mx-2"
+                <form:radiobuttons path="render" items="${renderList}" cssClass="form-check-inline fw-bold mx-2"
                                    required="true"/>
             </div>
         </div>
-
         <div class="row mt-2">
             <div class="col-lg-6">
                 <label class="fw-bold">Số hiệu phương tiện</label>
-                <form:input path="numberVehicle" cssClass="form-control" alt="VD: VN123"/>
+                <form:input path="vehicleNumber" cssClass="form-control" alt="VD: VN123"/>
             </div>
             <div class="col-lg-6">
                 <label class="fw-bold">Số ghế</label>
-                <form:input path="numberSeat" cssClass="form-control"/>
+                <form:input path="seats" cssClass="form-control"/>
             </div>
         </div>
 
@@ -86,13 +88,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <form:select path="dayStart" items="${dayStart}" cssClass="form-select" required="true"/>
+                        <form:select path="starDay" items="${starDayList}" cssClass="form-select" required="true"/>
                     </div>
                     <div class="col-lg-4">
-                        <form:select path="monthStart" items="${monthStart}" cssClass="form-select" required="true"/>
+                        <form:select path="starMonth" items="${starMonthList}" cssClass="form-select" required="true"/>
                     </div>
                     <div class="col-lg-4">
-                        <form:select path="yearStart" items="${yearStart}" cssClass="form-select" required="true"/>
+                        <form:select path="starYear" items="${starYearList}" cssClass="form-select" required="true"/>
                     </div>
                 </div>
             </div>
@@ -105,13 +107,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-4">
-                        <form:select path="dayEnd" items="${dayEnd}" cssClass="form-select" required="true"/>
+                        <form:select path="endDay" items="${endDayList}" cssClass="form-select" required="true"/>
                     </div>
                     <div class="col-lg-4">
-                        <form:select path="monthEnd" items="${monthEnd}" cssClass="form-select" required="true"/>
+                        <form:select path="endMonth" items="${endMonthList}" cssClass="form-select" required="true"/>
                     </div>
                     <div class="col-lg-4">
-                        <form:select path="yearEnd" items="${yearEnd}" cssClass="form-select" required="true"/>
+                        <form:select path="endYear" items="${endYearList}" cssClass="form-select" required="true"/>
                     </div>
                 </div>
             </div>
@@ -121,7 +123,7 @@
             <div class="col-lg-12">
                 <label class="fw-bold">Trong vòng 14 ngày qua, Anh/Chị có đến tỉnh/thành phố nào? </label>
                 <label class="text-danger">(*)</label>
-                <form:input path="informationMove" cssClass="form-control" required="true"/>
+                <form:input path="information" cssClass="form-control" required="true"/>
             </div>
         </div>
 
@@ -146,5 +148,8 @@
 
 </body>
 
-<script src="bootstrap-5.0.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
 </html>

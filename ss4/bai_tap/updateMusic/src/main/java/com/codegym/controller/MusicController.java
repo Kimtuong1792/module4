@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class MusicController {
-@Autowired
+    @Autowired
     IMusicService musicService;
+
     @GetMapping("")
     public String showMusic(Model model) {
-        model.addAttribute("musicList",musicService.findAll());
+        model.addAttribute("musicList", musicService.findAll());
         return "music";
     }
 
@@ -28,7 +29,7 @@ public class MusicController {
 
     @PostMapping("/create")
     public String create(Music music, Model model) {
-musicService.save(music);
+        musicService.save(music);
         return "redirect:/";
     }
 }

@@ -20,74 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c7ab84-5ed8-4db6-b005-e46b64e035fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/java/com/codegym/controller/MailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/java/com/codegym/model/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/webapp/WEB-INF/views/setting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mail_structure/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/model/MedicalDeclaration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/IMusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/repository/MusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/IMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/codegym/service/MusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/music.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/model/ProductForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/java/com/codegym/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/resources/upload_file.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/product/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/java/com/codegym/model/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/java/com/codegym/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/java/com/codegym/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/views/error.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/views/user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../thực_hành/spring-user-model/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/controller/MedicalController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/repository/IMedicalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/repository/MedicalRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/service/IMedicalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/service/MedicalService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss2/bai_tap/calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/bai_tap/calculator/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/model/MedicalDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/model/MedicalDeclaration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" beforeDir="false" afterPath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +190,9 @@
       <option name="presentableId" value="Default" />
       <updated>1657954577010</updated>
       <workItem from="1657954580074" duration="5165000" />
-      <workItem from="1657967266959" duration="638000" />
+      <workItem from="1657967266959" duration="1231000" />
+      <workItem from="1658030981002" duration="19000" />
+      <workItem from="1658051467848" duration="5201000" />
     </task>
     <servers />
   </component>
