@@ -16,13 +16,13 @@ public class MedicalController {
     IMedicalService medicalService;
 
     @GetMapping("")
-    public String home(@ModelAttribute MedicalDeclaration medicalDeclaration, Model model) {
+    public String home( Model model) {
         model.addAttribute("medicalDeclarationList", medicalService.findAll());
         return "home";
     }
 
     @GetMapping("/show-create")
-    public String showCreate(@ModelAttribute MedicalDeclaration medicalDeclaration, Model model) {
+    public String showCreate( Model model) {
         model.addAttribute("createMedical", new MedicalDeclaration());
         model.addAttribute("birthdayList",medicalService.birthdayList());
         model.addAttribute("genderList", medicalService.genderList());
@@ -45,7 +45,7 @@ public class MedicalController {
     }
     @GetMapping("/update")
     public String showUpdate(@RequestParam String identity, Model model) {
-        model.addAttribute("updateMedical", new MedicalDeclaration());
+
         model.addAttribute("birthdayList",medicalService.birthdayList());
         model.addAttribute("genderList", medicalService.genderList());
         model.addAttribute("countryList", medicalService.countryList());
@@ -56,6 +56,7 @@ public class MedicalController {
         model.addAttribute("endDayList",medicalService.endDayList());
         model.addAttribute("endMonthList",medicalService.endMonthList());
         model.addAttribute("endYearList",medicalService.endYearList());
+
         model.addAttribute("medicalDeclarationList", medicalService.findOne(identity));
         return "update";
     }

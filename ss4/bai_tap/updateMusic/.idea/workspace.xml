@@ -20,26 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c7ab84-5ed8-4db6-b005-e46b64e035fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/controller/MedicalController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/repository/IMedicalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/repository/MedicalRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/service/IMedicalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/service/MedicalService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mail_structure/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mail_structure/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/model/MedicalDeclaration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/model/MedicalDeclaration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/build/classes/java/main/com/codegym/controller/MedicalController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/build/classes/java/main/com/codegym/controller/MedicalController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/build/libs/medical_declaration-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/build/libs/medical_declaration-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/controller/MedicalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/java/com/codegym/controller/MedicalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../medical_declaration/src/main/webapp/WEB-INF/views/update.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/codegym/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/codegym/controller/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/updateMusic-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/updateMusic-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" beforeDir="false" afterPath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Module_3/ss9/bai_tap" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ss3/thuc_hanh/spring-customer-management-thymleaf" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,7 +199,9 @@
       <workItem from="1657954580074" duration="5165000" />
       <workItem from="1657967266959" duration="1231000" />
       <workItem from="1658030981002" duration="19000" />
-      <workItem from="1658051467848" duration="5201000" />
+      <workItem from="1658051467848" duration="5794000" />
+      <workItem from="1658115941572" duration="1713000" />
+      <workItem from="1658118082417" duration="417000" />
     </task>
     <servers />
   </component>
@@ -220,58 +229,58 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1657955541597" />
-    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1657957734597">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1658116951722">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1657957734597" />
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1657959749240">
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1658116951722" />
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.0.center" timestamp="1658117901660">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1658117901660" />
+    <state width="1069" height="222" key="GridCell.Tab.0.left" timestamp="1658117901660">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1658117901660" />
+    <state width="1069" height="222" key="GridCell.Tab.0.right" timestamp="1658117901660">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1657959749241">
+    <state width="1069" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1658117901660" />
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1657959749241" />
-    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.1.center" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.1.left" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1657959749240">
+    <state width="1069" height="222" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.1.right" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1657959749240" />
-    <state width="1069" height="222" key="GridCell.Tab.2.bottom" timestamp="1657959749241">
+    <state width="1069" height="222" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1657959749241" />
-    <state width="1069" height="222" key="GridCell.Tab.2.center" timestamp="1657959749241">
+    <state width="1069" height="222" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.2.center" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1657959749241" />
-    <state width="1069" height="222" key="GridCell.Tab.2.left" timestamp="1657959749241">
+    <state width="1069" height="222" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.2.left" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1657959749241" />
-    <state width="1069" height="222" key="GridCell.Tab.2.right" timestamp="1657959749241">
+    <state width="1069" height="222" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
+    <state width="1069" height="222" key="GridCell.Tab.2.right" timestamp="1658117901661">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1069" height="222" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1657959749241" />
+    <state width="1069" height="222" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1658117901661" />
     <state x="182" y="40" key="new project wizard" timestamp="1657958911380">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

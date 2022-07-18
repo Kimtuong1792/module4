@@ -24,7 +24,7 @@
 
 <div class="container-fluid mt-5">
 
-    <form:form modelAttribute="updateMedical" method = "post" action="/update">
+    <form:form modelAttribute="medicalDeclarationList" method = "post" action="/update">
         <div class="row mt-2">
             <div class="col-lg-12">
                 <label class="fw-bold">Họ tên (ghi chữ IN HOA) </label>
