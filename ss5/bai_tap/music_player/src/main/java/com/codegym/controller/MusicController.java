@@ -31,6 +31,10 @@ public class MusicController {
     @PostMapping("create")
     public String create(Music music, Model model){
       musicService.save(music);
-      return "create";
+      return "redirect:/";
+    }
+    @GetMapping("/show-update")
+    public String showUpdate(Model model){
+      model.addAttribute("updateMusic",)
     }
 }

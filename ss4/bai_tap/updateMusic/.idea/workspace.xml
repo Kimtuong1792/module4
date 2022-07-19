@@ -20,48 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67c7ab84-5ed8-4db6-b005-e46b64e035fa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/modules/music_player.main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/config/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/config/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/repository/IMusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/repository/MusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/service/IMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/service/MusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/music.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/classes/java/main/com/codegym/configuration/AppConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/classes/java/main/com/codegym/configuration/AppInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/classes/java/main/com/codegym/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/classes/java/main/com/codegym/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/libs/product-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/build/libs/product-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/src/main/java/com/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/src/main/java/com/codegym/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3/bai_tap/product/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/bai_tap/product/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss3/thuc_hanh/spring-customer-management-thymleaf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/spring-customer-management-thymleaf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" beforeDir="false" afterPath="$PROJECT_DIR$/../../thực_hành/bai_1/spring_mvc_form_tutorial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/classes/java/main/com/codegym/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/classes/java/main/com/codegym/controller/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/classes/java/main/com/codegym/repository/MusicRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/classes/java/main/com/codegym/repository/MusicRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/libs/music_player-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/build/libs/music_player-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/repository/MusicRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/java/com/codegym/repository/MusicRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/music.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5/bai_tap/music_player/src/main/webapp/WEB-INF/views/music.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +195,7 @@
       <workItem from="1658051467848" duration="5794000" />
       <workItem from="1658115941572" duration="1713000" />
       <workItem from="1658118082417" duration="417000" />
-      <workItem from="1658203524214" duration="3293000" />
+      <workItem from="1658203524214" duration="4132000" />
     </task>
     <servers />
   </component>

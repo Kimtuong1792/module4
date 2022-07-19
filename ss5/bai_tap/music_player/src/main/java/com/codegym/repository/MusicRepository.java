@@ -1,6 +1,7 @@
 package com.codegym.repository;
 
 import com.codegym.model.Music;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -32,16 +33,19 @@ public class MusicRepository implements IMusicRepository {
     }
 
     @Override
+    @Modifying
     public void save(Music music) {
         entityManager.persist(music);
     }
 
     @Override
+    @Modifying
     public void remove(Music music) {
         entityManager.remove(music);
     }
 
     @Override
+    @Modifying
     public void update(int id, Music music) {
         entityManager.merge(music);
 //        for (Music item : musicList) {

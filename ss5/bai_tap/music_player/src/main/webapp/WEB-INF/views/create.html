@@ -7,21 +7,22 @@
 
 </head>
 <body>
-<form modelAttribute="createMusic" action="create" method="post">
-    ID:
-    <input path="id">
+<form th:object="${createMusic}" th:action="create" method="post">
+
     <br>
     Tên bài hát:
-    <input path="nameMusic"/>
+    <input th:field="*{nameMusic}"/>
     <br>
     Nghệ sĩ thể hiện
-    <input path="author"/>
+    <input th:field="*{author}"/>
     <br>
     Thể loại nhạc (nhập thông tin dạng list)
-    <input path="typeOfMusic"/>
+
+    <input th:field="*{typeOfMusic}"/>
     <br>
     Đường dẫn file bài hát
-    <input path="link"/>
+
+    <input th:field="*{link}"/>
     <br>
     <button type="submit" value="save"> save</button>
 </form>

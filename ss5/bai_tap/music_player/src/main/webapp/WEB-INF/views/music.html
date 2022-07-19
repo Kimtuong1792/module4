@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <title>Title</title>
@@ -10,21 +10,25 @@
 <body>
 <button class="btn btn-outline-danger"><a href="/show-create"> Add Music</a></button>
 <table class="table table-striped">
-    <tr><th>ID</th>
+    <tr>
+        <th>ID</th>
         <th>tên bài hát</th>
         <th> nghệ sỹ</th>
         <th>thể loại</th>
         <th>đường dẫn</th>
+        <th>action</th>
+        <th>action</th>
     </tr>
 
-        <tr th:each="item:${musicList}">
+    <tr th:each="item:${musicList}">
         <td th:text="${item.getId()}"></td>
-            <td th:text="${item.getNameMusic()}"></td>
-            <td th:text="${item.getAuthor()}"></td>
-            <td th:text="${item.getTypeOfMusic()}"></td>
-            <td th:text="${item.getLink()}"></td>
-
-        </tr>
+        <td th:text="${item.getNameMusic()}"></td>
+        <td th:text="${item.getAuthor()}"></td>
+        <td th:text="${item.getTypeOfMusic()}"></td>
+        <td th:text="${item.getLink()}"></td>
+        <td>edit</td>
+        <td>delete</td>
+    </tr>
     </th:Each>
 </table>
 </body>
