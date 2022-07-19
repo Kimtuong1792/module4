@@ -5,9 +5,8 @@ import com.codegym.service.IMusicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.persistence.PersistenceContext;
 
@@ -33,8 +32,24 @@ public class MusicController {
       musicService.save(music);
       return "redirect:/";
     }
-    @GetMapping("/show-update")
-    public String showUpdate(Model model){
-      model.addAttribute("updateMusic",)
+    @GetMapping("/show-update/{id}")
+    public String showUpdate(@PathVariable int id, Model model){
+      model.addAttribute("updateMusic",musicService.findOne(id));
+        return "update";
     }
+    @PostMapping("/show-update/update")
+    public String update( Music music){
+        musicService.update( music);
+        return "redirect:/";
+    }
+    @GetMapping("/delete/{id}")
+    private String delete(@PathVariable int id, Model model) {
+        model.addAttribute("music", musicService.findOne(id));
+        return "delete";
+    }
+    @PostMapping("delete")
+    public String delete(Music music, RedirectAttributes redirect) {
+        musicService.remove(music);
+        redirect.addFlashAttribute("success", "Removed customer successfully!");
+        return "redirect:/";}
 }

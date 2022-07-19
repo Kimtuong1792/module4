@@ -9,9 +9,9 @@ public interface IMusicService {
 
     void save(Music music);
 
-    void remove(Music music);
+    void remove(Music music);;
 
-    void update(int id, Music music);
+    void update(Music music);
 
-
+    Music findOne(int id);
 }

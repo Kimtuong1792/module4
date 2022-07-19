@@ -26,8 +26,8 @@
         <td th:text="${item.getAuthor()}"></td>
         <td th:text="${item.getTypeOfMusic()}"></td>
         <td th:text="${item.getLink()}"></td>
-        <td>edit</td>
-        <td>delete</td>
+        <td><a th:href="@{/show-update/{id} (id = ${item.getId()})}">edit</a></td>
+        <td><a th:href="@{/delete/{id} (id = ${item.getId()})}">delete</a></td>
     </tr>
     </th:Each>
 </table>

@@ -3,6 +3,7 @@ package com.codegym.repository;
 import com.codegym.model.Music;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -41,22 +42,38 @@ public class MusicRepository implements IMusicRepository {
     @Override
     @Modifying
     public void remove(Music music) {
-        entityManager.remove(music);
+//        music.setId(id);
+//        System.out.println(music.getId());
+//        entityManager.remove(music);
+        entityManager.merge(entityManager.merge(music));
     }
 
     @Override
     @Modifying
-    public void update(int id, Music music) {
+    public void update( Music music) {
+
         entityManager.merge(music);
-//        for (Music item : musicList) {
-//            if (item.getId() == id) {
-//                item.setId(music.getId());
-//                item.setNameMusic(music.getNameMusic());
-//                item.setAuthor(music.getAuthor());
-//                item.setTypeOfMusic(music.getTypeOfMusic());
-//                item.setLink(music.getLink());
+
+    }
+
+    @Override
+    public Music findOne(int id) {
+//        Music music = null;
+//
+//        for (Music item : ) {
+//            if (item.getIdentity().equals(identity)) {
+//                medicalDeclaration = new MedicalDeclaration(item.getName(), item.getBirthday(),
+//                        item.getGender(), item.getCountry(), item.getIdentity(), item.getRender(),
+//                        item.getVehicleNumber(), item.getSeats(), item.getStarDay(), item.getStarMonth(),
+//                        item.getStarYear(), item.getEndDay(), item.getEndMonth(), item.getEndYear(),
+//                        item.getInformation());
 //            }
 //        }
+//        return music;
+
+        Music music = entityManager.
+                createQuery("select m from Music m where m.id =:id",Music.class).setParameter("id",id).getSingleResult();
+        return music;
     }
 
 }

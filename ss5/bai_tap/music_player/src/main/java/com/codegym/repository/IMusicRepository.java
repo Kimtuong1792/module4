@@ -11,7 +11,7 @@ public interface IMusicRepository {
 
     void remove(Music music);
 
-    void update(int id, Music music);
+    void update( Music music);
 
-void
+Music findOne(int id);
 }

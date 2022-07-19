@@ -24,12 +24,17 @@ public class MusicService implements IMusicService {
 
     @Override
     public void remove(Music music) {
-        musicRepository.remove(music);
+        musicRepository.remove( music);
     }
 
     @Override
-    public void update(int id, Music music) {
-        musicRepository.update(id, music);
+    public void update(Music music) {
+        musicRepository.update(music);
+    }
+
+    @Override
+    public Music findOne(int id) {
+        return musicRepository.findOne(id);
     }
 
 }
