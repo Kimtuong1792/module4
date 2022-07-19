@@ -20,12 +20,12 @@ public class ProductController {
     public String home(Model model) {
         List<Product> productList = productService.findAll();
         model.addAttribute("productList", productList);
-        return "/index";
+        return "/views/index";
     }
     @GetMapping("/create")
     public String create(Model model) {
         model.addAttribute("product", new Product());
-        return "/create";
+        return "/views/create";
     }
     @PostMapping("/save")
     public String save(Product product) {
@@ -37,7 +37,7 @@ public class ProductController {
     @GetMapping("/{id}/edit")
     public String edit(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
-        return "/edit";
+        return "/views/edit";
     }
     @PostMapping("/update")
     public String update(Product product) {
@@ -47,7 +47,7 @@ public class ProductController {
     @GetMapping("/{id}/delete")
     public String delete(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
-        return "/delete";
+        return "/views/delete";
     }
     @PostMapping("/delete")
     public String delete(Product product, RedirectAttributes redirect) {
@@ -58,11 +58,11 @@ public class ProductController {
     @GetMapping("/{id}/view")
     public String view(@PathVariable int id, Model model) {
         model.addAttribute("product", productService.findById(id));
-        return "/view";
+        return "/views/view";
     }
     @PostMapping ("/search")
     public String search(@RequestParam String name , Model model){
         model.addAttribute("productList",productService.findByName(name));
-        return "/index";
+        return "/views/index";
     }
 }
