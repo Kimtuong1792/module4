@@ -41,11 +41,12 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     @Modifying
-    public void remove(Music music) {
+    public void remove(int id) {
 //        music.setId(id);
 //        System.out.println(music.getId());
-//        entityManager.remove(music);
-        entityManager.merge(entityManager.merge(music));
+        Music music1 = findOne(id);
+        entityManager.remove(music1);
+//        entityManager.merge(entityManager.merge(music));
     }
 
     @Override

@@ -42,14 +42,14 @@ public class MusicController {
         musicService.update( music);
         return "redirect:/";
     }
-    @GetMapping("/delete/{id}")
-    private String delete(@PathVariable int id, Model model) {
-        model.addAttribute("music", musicService.findOne(id));
-        return "delete";
-    }
-    @PostMapping("delete")
-    public String delete(Music music, RedirectAttributes redirect) {
-        musicService.remove(music);
-        redirect.addFlashAttribute("success", "Removed customer successfully!");
+//    @GetMapping("/delete/{id}")
+//    private String delete(@PathVariable int id, Model model) {
+//        model.addAttribute("music", musicService.findOne(id));
+//        return "delete";
+//    }
+    @GetMapping("delete/{id}")
+    public String delete(@PathVariable int id) {
+        musicService.remove(id);
+       // redirect.addFlashAttribute("success", "Removed customer successfully!");
         return "redirect:/";}
 }

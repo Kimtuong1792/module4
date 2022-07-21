@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>Add Blog</h3>
+<p>
+    <a th:href="@{/list}">
+        Back to blog list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/save}" th:object="${blog}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>status</label>
+            <input type="text" th:field="*{status}"/>
+        </div>
+        <div>
+            <label>type</label>
+            <input type="email" th:field="*{type}"/>
+        </div>
+        <div>
+            <label>day</label>
+            <input type="date" th:field="*{day}"/>
+        </div>
+       <div>
+           <select th:field="*{category.id}">
+               <option th:each="item : ${categoryList}" th:value="${item.id}" th:text="${item.name}"></option>
+           </select>
+       </div>
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

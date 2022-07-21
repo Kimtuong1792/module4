@@ -51,8 +51,8 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public List<Product> findByName(String name) {
-
-//        return  entityManager.find(Product.class,name);
-        return null;
+        TypedQuery<Product> query = entityManager.createQuery(
+                "select m from Product as m where m.name like ?1", Product.class);
+        return query.setParameter(1, name).getResultList();
     }
 }
