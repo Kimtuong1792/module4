@@ -22,9 +22,8 @@ public class BlogController {
     ICategoryService categoryService;
 
     @GetMapping("/list")
-    public String home(@PageableDefault(value = 2) Pageable pageable, Model model) {
+    public String home(@PageableDefault(value = 5) Pageable pageable, Model model) {
         model.addAttribute("blogList", blogService.findAll(pageable));
-
         return "index";
     }
 
@@ -75,8 +74,8 @@ public class BlogController {
     }
 
     @PostMapping("/search")
-    public String search(@RequestParam String status, Model model) {
-        model.addAttribute("blogList", blogService.findByName(status));
+    public String search(@RequestParam String status,Pageable pageable, Model model) {
+        model.addAttribute("blogList", blogService.findByName(status,pageable));
         return "index";
     }
 }

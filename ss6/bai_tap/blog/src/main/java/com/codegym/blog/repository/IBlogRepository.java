@@ -15,11 +15,11 @@ import java.util.List;
 public interface IBlogRepository extends JpaRepository<Blog, Integer> {
     @Modifying
     @Query(value = "update  Blog  set status = :status," + " type = :type," + " day=:day where id = :id", nativeQuery = true)
-    void update(@Param("status") String status, @Param("type") String type, @Param("day") String commit, @Param("id") int id);
+    void update(@Param("status") String status, @Param("type") String type, @Param("day") String commit, @Param("id") int id );
 
-    @Modifying
+
     @Query(value = "select * from Blog where status like :status", nativeQuery = true)
-    List<Blog> findByName(@Param("status") String status);
+    Page<Blog> findByName(@Param("status") String status,Pageable pageable);
 
     Page<Blog> findAll(Pageable pageable);
 
