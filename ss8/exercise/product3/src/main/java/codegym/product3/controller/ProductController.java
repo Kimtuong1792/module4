@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -77,9 +78,10 @@ public class ProductController {
         return "view";
     }
     @PostMapping ("/search")
-    public String search(@PageableDefault(value = 3) Pageable pageable, @RequestParam("keyword") String keyword, Model model){
-        Page<Product> productList = productService.search(keyword, pageable);
-        model.addAttribute("productList", productList);
-        return "index";
-    }
-}
+    public ModelAndView search(@RequestParam("search")
+                                       String search, @PageableDefault(value = 1) Pageable pageable) {
+        Page<Product> products = productService.search("%" + search + "%", pageable);
+        ModelAndView modelAndView = new ModelAndView("/index");
+        modelAndView.addObject("productList", products);
+        return modelAndView;
+}}

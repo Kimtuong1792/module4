@@ -4,7 +4,7 @@
 <body>
 <h3>Add product</h3>
 <p>
-    <a th:href="@{/product}">
+    <a th:href="@{/list}">
         Back to customer list
     </a>
 </p>
@@ -15,14 +15,17 @@
         <div>
             <label>Name</label>
             <input type="text" th:field="*{name}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></span>
         </div>
         <div>
             <label>Price</label>
             <input type="email" th:field="*{price}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></span>
         </div>
         <div>
             <label>Producer</label>
             <input type="text" th:field="*{producer}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('producer')}" th:errors="*{producer}"></span>
         </div>
         <input type="submit" value="Save"/>
     </form>
