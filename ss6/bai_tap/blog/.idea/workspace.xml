@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dfd2771c-89f1-461d-912e-1162075d0218" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/Product3Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/repository/IProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/java/codegym/product3/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss8/exercise/product3/src/test/java/codegym/product3/Product3ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_2/spring-email-validate-gralde" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2/thuc_hanh/bai_3/spring-time-zone-gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss3/thuc_hanh/spring-customer-management-thymleaf" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3/thuc_hanh/spring-customer-management-thymleaf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss4/thực_hành/bai_1/spring_mvc_form_tutorial" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4/thực_hành/bai_1/spring_mvc_form_tutorial" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/spring-customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/spring-customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/spring-jpa-stored-procedure" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/spring-jpa-stored-procedure" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2CET0l5Bo8kBaz5QsMQOziU6zwd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODEGYM\module4\ss6\bai_tap\blog\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.codegym.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dfd2771c-89f1-461d-912e-1162075d0218" name="Default Changelist" comment="" />
+      <created>1658366524082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658366524082</updated>
+      <workItem from="1658366532409" duration="18247000" />
+      <workItem from="1658452871776" duration="9867000" />
+      <workItem from="1658641646276" duration="74000" />
+      <workItem from="1658643037060" duration="63000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1658641672158">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1658641672158" />
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1658454649740">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1658454649740" />
+    <state x="555" y="133" key="#xdebugger.evaluate" timestamp="1658394623642">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="555" y="133" key="#xdebugger.evaluate/0.0.1600.860@0.0.1600.860" timestamp="1658394623642" />
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1658643072454">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1658643072454" />
+    <state width="1540" height="332" key="GridCell.Tab.0.bottom" timestamp="1658485459161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658485459161" />
+    <state width="1540" height="332" key="GridCell.Tab.0.center" timestamp="1658485459160">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1658485459160" />
+    <state width="1540" height="332" key="GridCell.Tab.0.left" timestamp="1658485459160">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1658485459160" />
+    <state width="1540" height="332" key="GridCell.Tab.0.right" timestamp="1658485459160">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1658485459160" />
+    <state width="1540" height="332" key="GridCell.Tab.1.bottom" timestamp="1658485459161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658485459161" />
+    <state width="1540" height="332" key="GridCell.Tab.1.center" timestamp="1658485459161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1658485459161" />
+    <state width="1540" height="332" key="GridCell.Tab.1.left" timestamp="1658485459161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1658485459161" />
+    <state width="1540" height="332" key="GridCell.Tab.1.right" timestamp="1658485459161">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="332" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1658485459161" />
+    <state width="1557" height="243" key="GridCell.Tab.2.bottom" timestamp="1658398897997">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="243" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1658398897997" />
+    <state width="1557" height="243" key="GridCell.Tab.2.center" timestamp="1658398897997">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="243" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1658398897997" />
+    <state width="1557" height="243" key="GridCell.Tab.2.left" timestamp="1658398897997">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="243" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1658398897997" />
+    <state width="1557" height="243" key="GridCell.Tab.2.right" timestamp="1658398897997">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="243" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1658398897997" />
+    <state x="301" y="75" key="SettingsEditor" timestamp="1658392637031">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="75" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1658392637031" />
+    <state x="576" y="178" key="refactoring.ChangeSignatureDialog" timestamp="1658367704788">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="576" y="178" key="refactoring.ChangeSignatureDialog/0.0.1600.860@0.0.1600.860" timestamp="1658367704788" />
+  </component>
+</project>
