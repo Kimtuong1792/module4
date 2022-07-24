@@ -24,8 +24,6 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     public List<Music> findAll() {
-       // return this.entityManager.createQuery("from Music , Music .class").getResultList();
-//        return query.getResultList();
 
         TypedQuery<Music> query = entityManager
                 .createQuery("SELECT s FROM Music as s", Music.class);
@@ -51,7 +49,7 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     @Modifying
-    public void update( Music music) {
+    public void update(Music music) {
 
         entityManager.merge(music);
 
@@ -59,21 +57,10 @@ public class MusicRepository implements IMusicRepository {
 
     @Override
     public Music findOne(int id) {
-//        Music music = null;
-//
-//        for (Music item : ) {
-//            if (item.getIdentity().equals(identity)) {
-//                medicalDeclaration = new MedicalDeclaration(item.getName(), item.getBirthday(),
-//                        item.getGender(), item.getCountry(), item.getIdentity(), item.getRender(),
-//                        item.getVehicleNumber(), item.getSeats(), item.getStarDay(), item.getStarMonth(),
-//                        item.getStarYear(), item.getEndDay(), item.getEndMonth(), item.getEndYear(),
-//                        item.getInformation());
-//            }
-//        }
-//        return music;
+
 
         Music music = entityManager.
-                createQuery("select m from Music m where m.id =:id",Music.class).setParameter("id",id).getSingleResult();
+                createQuery("select m from Music m where m.id =:id", Music.class).setParameter("id", id).getSingleResult();
         return music;
     }
 

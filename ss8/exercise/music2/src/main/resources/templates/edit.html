@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head"></head>
+<body>
+<h3>Edit Music</h3>
+<p>
+    <a th:href="@{}">
+        Back to Music list
+    </a>
+</p>
+<div id="form">
+    <form action="#" th:action="@{/update}" th:object="${musicDto}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name music </label>
+            <input type="text" th:field="*{nameMusic}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('nameMusic')}" th:errors="*{nameMusic}"></span>
+        </div>
+        <div>
+            <label>author</label>
+            <input type="text" th:field="*{author}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></span>
+        </div>
+        <div>
+            <label>typeOfMusic</label>
+            <input type="text" th:field="*{typeOfMusic}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('typeOfMusic')}" th:errors="*{typeOfMusic}"></span>
+        </div>
+        <div>
+            <label>link</label>
+            <input type="text" th:field="*{link}"/>
+            <span style="color: red" th:if="${#fields.hasErrors('link')}" th:errors="*{link}"></span>
+        </div>
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>
+

@@ -1,6 +1,16 @@
 package com.codegym.model;
 
 public class Mail {
+private  int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     private String languages;
     private String pageSize;
     private String spamsFillter;
@@ -9,7 +19,7 @@ public class Mail {
     public Mail() {
     }
 
-    public Mail(String languages, String pageSize, String spamsFillter, String signature) {
+    public Mail(int id, String languages, String pageSize, String spamsFillter, String signature) {
         this.languages = languages;
         this.pageSize = pageSize;
         this.spamsFillter = spamsFillter;
