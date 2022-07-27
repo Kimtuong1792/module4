@@ -15,6 +15,7 @@ public interface IBookService {
     Optional<Book> findById(int id);
 
     void remove(int id);
+    void payBook(Book book);
 
     Page<Book> search(String name, Pageable pageInfo);
 }

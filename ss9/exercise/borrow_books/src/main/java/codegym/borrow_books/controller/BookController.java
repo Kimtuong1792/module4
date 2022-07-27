@@ -10,6 +10,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -44,5 +45,25 @@ public class BookController {
         Page<Book> bookList = bookService.findAll(pageable);
         model.addAttribute("bookList", bookList);
         return "index";
+    }
+
+    @GetMapping("/{id}/pay")
+    public String showPay() {
+        return "pay";
+    }
+
+    @PostMapping("/pay")
+    public String payBook(@PageableDefault(value = 3) Pageable pageable, Book book, Model model, @PathVariable long code) {
+        borrowService.findByCode(code);
+        bookService.payBook(book);
+        borrowService.delete(code);
+        Page<Book> bookList = bookService.findAll(pageable);
+        model.addAttribute("bookList", bookList);
+        return "index";
+
+    }
+    @ExceptionHandler(Exception.class)
+    public String errors() {
+        return "errors";
     }
 }

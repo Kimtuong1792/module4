@@ -15,6 +15,8 @@ public interface IBorrowService {
     Optional<Borrow> findById(int id);
 
     void remove(int id);
+    Borrow findByCode(Long code);
+    void delete(Long code);
 
     Page<Borrow> search(String name, Pageable pageInfo);
 }

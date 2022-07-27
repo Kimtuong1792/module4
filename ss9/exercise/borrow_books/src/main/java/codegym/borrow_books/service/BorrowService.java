@@ -38,6 +38,16 @@ public class BorrowService implements IBorrowService {
     }
 
     @Override
+    public Borrow findByCode(Long code) {
+        return borrowRepository.findByCode(code);
+    }
+
+    @Override
+    public void delete(Long code) {
+        borrowRepository.deleteByCode(code);
+    }
+
+    @Override
     public Page<Borrow> search(String name, Pageable pageInfo) {
         return null;
     }

@@ -44,7 +44,7 @@
         <td th:text="${row.type}"></td>
         <td th:text="${row.number}"></td>
         <td><a th:href="@{/{id}/borrow(id=${row.getId()})}">borrow</a></td>
-        <td><button th:href="@{/{id}/pay(id=${row.getId()})}">pay</button></td>
+        <td><a th:href="@{/{id}/pay(id=${row.getId()})}">pay</a></td>
         <td><button th:href="@{/{id}/view(id=${row.getId()})}">view</button></td>
     </tr>
     </tbody>
