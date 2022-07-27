@@ -36,6 +36,6 @@ public class MusicService implements IMusicService {
 
     @Override
     public Page<Music> search(String name, Pageable pageInfo) {
-        return musicRepository.findByNameContaining(name,pageInfo);
+        return musicRepository.findByNameContaining("%" + name +"%" ,pageInfo);
     }
 }

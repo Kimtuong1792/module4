@@ -78,10 +78,10 @@ public class ProductController {
         return "view";
     }
     @PostMapping ("/search")
-    public ModelAndView search(@RequestParam("search")
+    public ModelAndView search(@RequestParam("name")
                                        String search, @PageableDefault(value = 1) Pageable pageable) {
-        Page<Product> products = productService.search("%" + search + "%", pageable);
-        ModelAndView modelAndView = new ModelAndView("/index");
+        Page<Product> products = productService.search(search , pageable);
+        ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("productList", products);
         return modelAndView;
 }}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head></head>
+<body>
+<h3>Borrows Book</h3>
+<div id="form">
+    <form action="#" th:action="@{/update}" th:object="${book}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>Author</label>
+            <input type="text" th:field="*{author}"/>
+        </div>
+        <div>
+            <label>Type</label>
+            <input type="text" th:field="*{type}"/>
+        </div>
+        <input type="submit" value="borrow"/>
+    </form>
+</div>
+<footer></footer>
+</body>
+</html>

@@ -8,6 +8,6 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 public interface IMusicRepository extends JpaRepository<Music,Integer> {
-    @Query(value = "select * from music where nameMusic like :search", nativeQuery= true)
+    @Query(value = "select * from music where name_music like :search", nativeQuery= true)
     Page<Music> findByNameContaining(@Param("search") String name, Pageable pageable);
 }

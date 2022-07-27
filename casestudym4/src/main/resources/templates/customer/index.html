@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<h3>Customer</h3>
+<p>
+    <a th:href="@{/customer/create}">
+        Add new Customer
+    </a>
+</p>
+<!--<form th:action="@{/search}" method="post" >-->
+<!--    <input type="text" name="name">-->
+<!--    <button type="submit" >Search</button>-->
+<!--</form>-->
+
+<!--<div class="notify">-->
+<!--    <div th:if="${success}">-->
+<!--        <span th:text="${success}"></span>-->
+<!--    </div>-->
+<!--</div>-->
+<table class="table">
+    <thead>
+
+    <tr style="background-color: #4CAF50">
+        <th>ID</th>
+        <th>Name</th>
+        <th>birthday</th>
+        <th>gender</th>
+        <th>idCard</th>
+        <th>numberPhone</th>
+        <th>email</th>
+        <th>Address</th>
+        <th>customerType</th>
+        <th>Actions</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${customerList}">
+        <td th:text="${row.id}"></td>
+        <td th:text="${row.name}"></td>
+        <td th:text="${row.birthday}"></td>
+        <td th:if="${row.gender == 0} " th:text="Male"></td>
+        <td th:if="${row.gender == 1} " th:text="Female"></td>
+        <td th:if="${row.gender == 2} " th:text="LGBT"></td>
+        <td th:text="${row.idCard}"></td>
+        <td th:text="${row.numberPhone}"></td>
+        <td th:text="${row.email}"></td>
+        <td th:text="${row.address}"></td>
+        <td th:text="${row.customerType.name}"></td>
+        <td><a th:href="@{/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <!--        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+        <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    th:data-bs-target="'#a' + ${row.id}">
+                Delete
+            </button>
+
+            <div class="modal fade" th:id="a + ${row.id}" data-bs-backdrop="static" data-bs-keyboard="false"
+                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form action="#" th:action="@{/customer/delete}"
+                          method="POST">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you want delete
+                                <span class="text-info" th:text="${row.name}"></span>
+                                <input type="hidden" th:value = "${row.id}" name="id">
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-success">Delete</button>
+                            <button type="button" class="btn btn-secondary center-pill" data-bs-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </td>
+
+
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{'/customer'(page=${customerList.number - 1})}" th:if="${customerList.hasPrevious()}">Previous</a>
+    <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
+    <a th:href="@{'/customer'(page=${customerList.number + 1})}" th:if="${customerList.hasNext()}">Next</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -86,10 +86,10 @@ public class MusicController {
     }
 
     @PostMapping("/search")
-    public ModelAndView search(@RequestParam("search")
+    public ModelAndView search(@RequestParam("name")
                                        String search, @PageableDefault(value = 1) Pageable pageable) {
-        Page<Music> musics = musicService.search("%" + search + "%", pageable);
-        ModelAndView modelAndView = new ModelAndView("/index");
+        Page<Music> musics = musicService.search(search , pageable);
+        ModelAndView modelAndView = new ModelAndView("index");
         modelAndView.addObject("musicList", musics);
         return modelAndView;
     }

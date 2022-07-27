@@ -13,10 +13,4 @@ public interface IUserService {
     void save(User user);
 
     Optional<User> findById(int id);
-//
-//    void update( User user);
-
-//    void remove(int id);
-//    Page<Blog> findByName(String name, Pageable pageable);
-//    Page<Blog> findAll(Pageable pageable);
 }
