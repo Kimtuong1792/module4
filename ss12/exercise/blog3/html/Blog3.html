@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog3</title>
+</head>
+<body>
+<input type="text" id="inputSearch" name="search">
+<br>
+<br>
+
+<table class="table" border="1px" width="500px" >
+    <tr style="background-color: forestgreen">
+        <th>ID</th>
+        <th>Status</th>
+        <th>Type</th>
+        <th>Day</th>
+    </tr>
+</table>
+<br>
+<button id="next">load more</button>
+<script src="jquery-3.6.0.min.js"></script>
+<script>
+    $(Document).ready(function () {
+        $.ajax({
+            url: "http://localhost:8080/blog/api/v1",
+            type: "GET",
+            dataType: "json",
+            success: function (data) {
+                let str = [];
+                let x = 0;
+                if (data.length <= 3) {
+                    x = data.length;
+                } else {
+                    x = 3;
+                }
+                for (let i = 0; i < x; i++) {
+                    str.push("<tr>")
+                    str.push("<td>" + data[i].id + "</td>")
+                    str.push("<td>" + data[i].status + "</td>")
+                    str.push("<td>" + data[i].type + "</td>")
+                    str.push("<td>" + data[i].day + "</td>")
+                    str.push("</tr>")
+                }
+                $("table").append((str.join("")));
+            }
+        })
+
+        $("#inputSearch").keyup(function () {
+            let value = $(this).val();
+            $("table").empty();
+            $.ajax({
+                url: "http://localhost:8080/blog/api/v1/search?search=" + value,
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    let str = [];
+                    str.push(`
+                            <tr style="background-color: forestgreen">
+                                <th>ID</th>
+                                <th>Status</th>
+                                <th>Type</th>
+                                <th>Day</th>
+                            </tr>
+                        `)
+                    for (let i = 0; i < data.length; i++) {
+                        str.push("<tr>")
+                        str.push("<td>" + data[i].id + "</td>")
+                        str.push("<td>" + data[i].status + "</td>")
+                        str.push("<td>" + data[i].type + "</td>")
+                        str.push("<td>" + data[i].day + "</td>")
+                        str.push("</tr>")
+                    }
+                    $("table").append((str.join("")));
+                }
+            })
+        })
+
+        $("#next").click(function () {
+            $("table").empty();
+            $.ajax({
+                url: "http://localhost:8080/blog/api/v1",
+                type: "GET",
+                dataType: "json",
+                success: function (data) {
+                    let str = [];
+                    str.push(`
+                   <tr style="background-color: forestgreen">
+                        <th>ID</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Day</th>
+                     </tr>
+`)
+                    for (let i = 0; i < data.length; i++) {
+                        str.push("<tr>")
+                        str.push("<td>" + data[i].id + "</td>")
+                        str.push("<td>" + data[i].status + "</td>")
+                        str.push("<td>" + data[i].type + "</td>")
+                        str.push("<td>" + data[i].day + "</td>")
+                        str.push("</tr>")
+                    }
+                    $("table").append((str.join("")));
+                }
+            })
+        })
+    })
+
+
+</script>
+</body>
+</html>
