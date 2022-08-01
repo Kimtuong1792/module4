@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form>
+<div>
     Producer:
     <input type="text" id="producer" placeholder="producer">
 
@@ -17,16 +17,21 @@
     <input type="text" id="price" placeholder="price">
 
     <input type="submit" value="Add" onclick="addNewSmartPhone()">
-</form>
+</div>
 
 <h2> Smart Phone List</h2>
 <table class="table" border="1px" width="500px">
     <tr style="background-color: forestgreen">
+        <thead>
         <th>ID</th>
         <th>model</th>
         <th>price</th>
         <th>producer</th>
         <th>Action</th>
+        </thead>
+        <tbody>
+
+        </tbody>
     </tr>
 </table>
 <br>
@@ -72,7 +77,6 @@
             type: "GET",
             dataType: "json",
             success: function (data) {
-                debugger
                 document.getElementById("id").value = (data.id);
                 document.getElementById("producerEdit").value = (data.producer);
                 document.getElementById("modelEdit").value = (data.model);
@@ -94,22 +98,44 @@
             model: model,
             price: price
         }
+
+         $(".table tbody").empty();
         $.ajax({
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-            type: "POST",
+            type: "PUT",
             data: JSON.stringify(newSmartphone),
             //tên API
-            url: "http://localhost:8080/phone/api/v1",
-            success: displayList
+            url: "http://localhost:8080/phone/api/v1/" + id,
+            success: function () {
+                $.ajax({
+                    url: "http://localhost:8080/phone/api/v1",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        let str = [];
+                        for (let i = 0; i < data.length; i++) {
+                            str.push("<tr>")
+                            str.push("<td>" + data[i].id + "</td>")
+                            str.push("<td>" + data[i].model + "</td>")
+                            str.push("<td>" + data[i].price + "</td>")
+                            str.push("<td>" + data[i].producer + "</td>")
+                            str.push(`<td><button data-bs-toggle="editModal" data-bs-target="#exampleModal" onclick="findById(` + data[i].id + `)">Edit</button></td>`)
+                            str.push("</tr>")
+                        }
+                        $("table").append((str.join("")));
+                    }
+                })
+            }
 
         })
 
     }
 
     function addNewSmartPhone() {
+        debugger
         //lay du lieu
         let producer = $('#producer').val();
         let model = $('#model').val();
@@ -120,6 +146,7 @@
             price: price
         };
         // goi ajax
+        $(".table tbody").empty();
         $.ajax({
             headers: {
                 'Accept': 'application/json',
@@ -130,7 +157,26 @@
             //tên API
             url: "http://localhost:8080/phone/api/v1",
             //xử lý khi thành công
-            success: displayList
+            success: function () {
+                $.ajax({
+                    url: "http://localhost:8080/phone/api/v1",
+                    type: "GET",
+                    dataType: "json",
+                    success: function (data) {
+                        let str = [];
+                        for (let i = 0; i < data.length; i++) {
+                            str.push("<tr>")
+                            str.push("<td>" + data[i].id + "</td>")
+                            str.push("<td>" + data[i].model + "</td>")
+                            str.push("<td>" + data[i].price + "</td>")
+                            str.push("<td>" + data[i].producer + "</td>")
+                            str.push(`<td><button data-bs-toggle="editModal" data-bs-target="#exampleModal" onclick="findById(` + data[i].id + `)">Edit</button></td>`)
+                            str.push("</tr>")
+                        }
+                        $("table").append((str.join("")));
+                    }
+                })
+            }
 
         });
         //chặn sự kiện mặc định của thẻ

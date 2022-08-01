@@ -22,6 +22,12 @@ public class Smartphone {
         this.price = price;
     }
 
+    public Smartphone(String producer, String model, double price) {
+        this.producer = producer;
+        this.model = model;
+        this.price = price;
+    }
+
     public Long getId() {
         return id;
     }
@@ -65,10 +71,10 @@ public class Smartphone {
     }
 
     public boolean isPresent() {
-        return false;
+        return true;
     }
 
     public void setPresent(boolean present) {
-      
+
     }
 }

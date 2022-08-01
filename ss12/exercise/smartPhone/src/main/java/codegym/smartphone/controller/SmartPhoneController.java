@@ -24,7 +24,7 @@ public class SmartPhoneController {
         }
         return new ResponseEntity<>(smartphoneList, HttpStatus.OK);
     }
-    
+
     @PostMapping
     public ResponseEntity<Smartphone> createSmartphone(@RequestBody Smartphone smartphone) {
         return new ResponseEntity<>(smartphoneService.save(smartphone), HttpStatus.CREATED);
@@ -33,13 +33,13 @@ public class SmartPhoneController {
     @GetMapping("/{id}")
     public ResponseEntity<Smartphone> findById(@PathVariable Long id) {
         if (!smartphoneService.findById(id).isPresent()){
-            return new ResponseEntity<>(smartphoneService.findById(id), HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>( HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(smartphoneService.findById(id), HttpStatus.OK);
 
     }
     @PutMapping("/{id}")
-    public ResponseEntity<Smartphone> updateBlog(@PathVariable Long id,
+    public ResponseEntity<Smartphone> updatePhone(@PathVariable Long id,
                                                  @RequestBody Smartphone smartphone) {
         Smartphone currentSmartphone = smartphoneService.findById(id);
         if (currentSmartphone == null) {
