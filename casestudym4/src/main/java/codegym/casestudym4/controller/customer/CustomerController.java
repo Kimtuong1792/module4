@@ -22,8 +22,9 @@ public class CustomerController {
     @Autowired
     ICustomerTypeService customerTypeService;
 
+
     @GetMapping("/customer")
-    public String customerList(@PageableDefault(value = 2) Pageable pageable, Model model) {
+    public String customerList(@PageableDefault(value = 5) Pageable pageable, Model model) {
         model.addAttribute("customerList", customerService.findAll(pageable));
         return "customer/index";
     }
@@ -46,7 +47,7 @@ public class CustomerController {
         redirectAttributes.addFlashAttribute("success", "Add Customer Successful!");
         return "redirect:/customer";
     }
-    @GetMapping("/{id}/edit")
+    @GetMapping("/customer/{id}/edit")
     public String edit(@PathVariable int id, Model model) {
         model.addAttribute("customerDto", customerService.findById(id));
         model.addAttribute("customerTypeList", customerTypeService.findAll());
@@ -65,7 +66,7 @@ public class CustomerController {
         redirect.addFlashAttribute("success", "Update product successfully!");
         return "redirect:/customer";
     }
-    @GetMapping("/{id}/delete")
+    @GetMapping("/customer/{id}/delete")
     public String delete(@PathVariable int id, Model model) {
         model.addAttribute("customer", customerService.findById(id));
         model.addAttribute("customerTypeList", customerTypeService.findAll());

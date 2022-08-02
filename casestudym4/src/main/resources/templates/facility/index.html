@@ -6,46 +6,57 @@
 
 </head>
 <body>
-<h3>Employee</h3>
+<h3>Customer</h3>
 <p>
-    <a th:href="@{/employee/create}">
-        Add new Employee
+    <a th:href="@{/customer/create}">
+        Add new Customer
     </a>
 </p>
+<!--<form th:action="@{/search}" method="post" >-->
+<!--    <input type="text" name="name">-->
+<!--    <button type="submit" >Search</button>-->
+<!--</form>-->
 
+<!--<div class="notify">-->
+<!--    <div th:if="${success}">-->
+<!--        <span th:text="${success}"></span>-->
+<!--    </div>-->
+<!--</div>-->
 <table class="table">
     <thead>
 
     <tr style="background-color: #4CAF50">
         <th>ID</th>
         <th>Name</th>
-        <th>birthday</th>
-        <th>idCard</th>
-        <th>salary</th>
-        <th>numberPhone</th>
-        <th>email</th>
-        <th>Address</th>
-        <th>positionId</th>
-        <th>educationDegreeId</th>
-        <th>divisionId</th>
+        <th>Area</th>
+        <th>Cost</th>
+        <th>Max People</th>
+        <th>Standard Room</th>
+        <th>Description Other Convenience</th>
+        <th>Pool Area</th>
+        <th>Number OfF loors</th>
+        <th>Standard Room</th>
+        <th>Facility Free</th>
+        <th>Rent Type</th>
+        <th>Facility Type</th>
         <th>Actions</th>
         <th>Actions</th>
-
     </tr>
     </thead>
     <tbody>
-    <tr th:each="row : ${employeeList}">
+    <tr th:each="row : ${facilityList}">
         <td th:text="${row.id}"></td>
         <td th:text="${row.name}"></td>
-        <td th:text="${row.birthday}"></td>
-        <td th:text="${row.idCard}"></td>
-        <td th:text="${row.salary}"></td>
-        <td th:text="${row.numberPhone}"></td>
-        <td th:text="${row.email}"></td>
-        <td th:text="${row.address}"></td>
-        <td th:text="${row.position.name}"></td>
-        <td th:text="${row.educationDegree.name}"></td>
-        <td th:text="${row.division.name}"></td>
+        <td th:text="${row.area}"></td>
+        <td th:text="${row.cost}"></td>
+        <td th:text="${row.maxPeople}"></td>
+        <td th:text="${row.standardRoom}"></td>
+        <td th:text="${row.descriptionOtherConvenience}"></td>
+        <td th:text="${row.poolArea}"></td>
+        <td th:text="${row.numberOfFloors}"></td>
+        <td th:text="${row.facilityFree}"></td>
+        <td th:text="${row.rentType.name}"></td>
+        <td th:text="${row.facilityType.name}"></td>
         <td><a th:href="@{/{id}/edit(id=${row.getId()})}">edit</a></td>
         <!--        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>-->
         <td>
@@ -57,7 +68,7 @@
             <div class="modal fade" th:id="a + ${row.id}" data-bs-backdrop="static" data-bs-keyboard="false"
                  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <form action="#" th:action="@{/employee/delete}"
+                    <form action="#" th:action="@{/facility/delete}"
                           method="POST">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -85,9 +96,9 @@
     </tbody>
 </table>
 <div>
-    <a th:href="@{'/employee'(page=${employeeList.number - 1})}" th:if="${employeeList.hasPrevious()}">Previous</a>
-    <span th:text="${employeeList.number + 1}"></span>/<span th:text="${employeeList.totalPages}"></span>
-    <a th:href="@{'/employee'(page=${employeeList.number + 1})}" th:if="${employeeList.hasNext()}">Next</a>
+    <a th:href="@{'/customer'(page=${customerList.number - 1})}" th:if="${customerList.hasPrevious()}">Previous</a>
+    <span th:text="${customerList.number + 1}"></span>/<span th:text="${customerList.totalPages}"></span>
+    <a th:href="@{'/customer'(page=${customerList.number + 1})}" th:if="${customerList.hasNext()}">Next</a>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

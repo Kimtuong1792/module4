@@ -14,16 +14,16 @@ public class Employee {
     private String numberPhone;
     private String email;
     private String address;
-@ManyToOne
-@JoinColumn(name = "position_id" , referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "position_id", referencedColumnName = "id")
     private Position position;
 
-@ManyToOne
-@JoinColumn(name = "educationDegree_id", referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "educationDegree_id", referencedColumnName = "id")
     private EducationDegree educationDegree;
 
-@ManyToOne
-@JoinColumn(name = "division_id", referencedColumnName = "id")
+    @ManyToOne
+    @JoinColumn(name = "division_id", referencedColumnName = "id")
     private Division division;
 
 

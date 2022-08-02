@@ -1,8 +1,6 @@
 package codegym.casestudym4.controller.employee;
 
-import codegym.casestudym4.dto.customer.CustomerDto;
 import codegym.casestudym4.dto.employee.EmployeeDto;
-import codegym.casestudym4.model.customer.Customer;
 import codegym.casestudym4.model.employee.Employee;
 import codegym.casestudym4.service.employee.IDivisionService;
 import codegym.casestudym4.service.employee.IEducationDegreeService;
@@ -16,10 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
@@ -32,11 +27,13 @@ public class EmployController {
     IEducationDegreeService educationDegreeService;
    @Autowired
     IPositionService positionService;
+
     @GetMapping("/employee")
-    public String customerList(@PageableDefault(value = 2) Pageable pageable, Model model) {
+    public String customerList(@PageableDefault(value = 5) Pageable pageable, Model model) {
         model.addAttribute("employeeList", employeeService.findAll(pageable));
         return "employee/index";
     }
+
     @GetMapping("/employee/create")
     public String create(Model model) {
         model.addAttribute("employeeDto", new EmployeeDto());
@@ -57,7 +54,7 @@ public class EmployController {
         redirectAttributes.addFlashAttribute("success", "Add Customer Successful!");
         return "redirect:/employee";
     }
-    @GetMapping("/{id}/edit")
+    @GetMapping("/employee/{id}/edit")
     public String edit(@PathVariable int id, Model model) {
         model.addAttribute("employeeDto", employeeService.findById(id));
         model.addAttribute("positionList", positionService.findAll());
@@ -78,6 +75,20 @@ public class EmployController {
         BeanUtils.copyProperties(employeeDto, employee);
         employeeService.save(employee);
         redirect.addFlashAttribute("success", "Update product successfully!");
+        return "redirect:/employee";
+    }
+    @GetMapping("/employee/{id}/delete")
+    public String delete(@PathVariable int id, Model model) {
+        model.addAttribute("employee", employeeService.findById(id));
+        model.addAttribute("positionList", positionService.findAll());
+        model.addAttribute("divisionList", divisionService.findAll());
+        model.addAttribute("educationDegreeList", educationDegreeService.findAll());
+        return "/employee/delete";
+    }
+    @PostMapping("/employee/delete")
+    public String delete(@RequestParam int id, RedirectAttributes redirect) {
+        employeeService.remove(id);
+        redirect.addFlashAttribute("success", "Removed customer successfully!");
         return "redirect:/employee";
     }
 }
