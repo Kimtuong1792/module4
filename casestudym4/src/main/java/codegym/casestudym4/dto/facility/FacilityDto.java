@@ -1,15 +1,9 @@
-package codegym.casestudym4.model.facility;
+package codegym.casestudym4.dto.facility;
 
-import codegym.casestudym4.model.contract.Contract;
-import codegym.casestudym4.model.employee.Position;
+import codegym.casestudym4.model.facility.FacilityType;
+import codegym.casestudym4.model.facility.RentType;
 
-import javax.persistence.*;
-import java.util.Set;
-
-@Entity
-public class Facility {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class FacilityDto {
     private int id;
     private String name;
     private int area;
@@ -20,22 +14,15 @@ public class Facility {
     private Double poolArea;
     private int numberOfFloors;
     private String facilityFree;
-    @ManyToOne
-    @JoinColumn(name = "rent_type_id", referencedColumnName = "id")
     private RentType rentType;
-    @ManyToOne
-    @JoinColumn(name = "facility_type_id", referencedColumnName = "id")
     private FacilityType facilityType;
 
-    @OneToMany(mappedBy = "facility")
-    Set<Contract> contract;
-
-    public Facility() {
+    public FacilityDto() {
     }
 
-    public Facility(int id, String name, int area, Double cost, int maxPeople, String standardRoom,
-                    String descriptionOtherConvenience,
-                    Double poolArea, int numberOfFloors, String facilityFree, RentType rentType, FacilityType facilityType) {
+    public FacilityDto(int id, String name, int area, Double cost, int maxPeople, String standardRoom,
+                       String descriptionOtherConvenience, Double poolArea, int numberOfFloors,
+                       String facilityFree, RentType rentType, FacilityType facilityType) {
         this.id = id;
         this.name = name;
         this.area = area;
@@ -144,23 +131,5 @@ public class Facility {
 
     public void setFacilityType(FacilityType facilityType) {
         this.facilityType = facilityType;
-    }
-
-    @Override
-    public String toString() {
-        return "Facility{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", area=" + area +
-                ", cost=" + cost +
-                ", maxPeople=" + maxPeople +
-                ", standardRoom='" + standardRoom + '\'' +
-                ", descriptionOtherConvenience='" + descriptionOtherConvenience + '\'' +
-                ", poolArea=" + poolArea +
-                ", numberOfFloors=" + numberOfFloors +
-                ", facilityFree='" + facilityFree + '\'' +
-                ", rentType=" + rentType +
-                ", facilityType=" + facilityType +
-                '}';
     }
 }

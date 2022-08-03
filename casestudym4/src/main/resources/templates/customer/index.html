@@ -6,6 +6,7 @@
 
 </head>
 <body>
+
 <h3>Customer</h3>
 <p>
     <a th:href="@{/customer/create}">
@@ -53,7 +54,7 @@
         <td th:text="${row.email}"></td>
         <td th:text="${row.address}"></td>
         <td th:text="${row.customerType.name}"></td>
-        <td><a th:href="@{/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/customer/{id}/edit(id=${row.getId()})}">edit</a></td>
         <!--        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>-->
         <td>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal"

@@ -1,6 +1,9 @@
 package codegym.casestudym4.model.employee;
 
+import codegym.casestudym4.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Employee {
@@ -26,6 +29,8 @@ public class Employee {
     @JoinColumn(name = "division_id", referencedColumnName = "id")
     private Division division;
 
+    @OneToMany(mappedBy = "employee")
+    Set<Contract> contract;
 
     public Employee() {
     }
