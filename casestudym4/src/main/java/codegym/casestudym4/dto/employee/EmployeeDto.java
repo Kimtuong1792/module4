@@ -44,7 +44,7 @@ public class EmployeeDto {
     private Position position;
     private EducationDegree educationDegree;
     private Division division;
-
+    private Integer statusDelete=0;
     public EmployeeDto() {
     }
 
@@ -150,5 +150,13 @@ public class EmployeeDto {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public Integer getStatusDelete() {
+        return statusDelete;
+    }
+
+    public void setStatusDelete(Integer statusDelete) {
+        this.statusDelete = statusDelete;
     }
 }

@@ -1,12 +1,10 @@
 package codegym.casestudym4.model.contract;
 
 import codegym.casestudym4.model.customer.Customer;
-import codegym.casestudym4.model.customer.CustomerType;
 import codegym.casestudym4.model.employee.Employee;
 import codegym.casestudym4.model.facility.Facility;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
@@ -14,8 +12,8 @@ public class Contract {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    private String startDate;
+    private String endDate;
     private double deposit;
 
     @ManyToOne
@@ -35,7 +33,7 @@ public class Contract {
     public Contract() {
     }
 
-    public Contract(int id, LocalDate startDate, LocalDate endDate, double deposit,
+    public Contract(int id, String startDate, String endDate, double deposit,
                     Customer customer, Employee employee, Facility facility,
                     Set<ContractDetail> contractDetails) {
         this.id = id;
@@ -64,19 +62,19 @@ public class Contract {
         this.id = id;
     }
 
-    public LocalDate getStartDate() {
+    public String getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(LocalDate startDate) {
+    public void setStartDate(String startDate) {
         this.startDate = startDate;
     }
 
-    public LocalDate getEndDate() {
+    public String getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(LocalDate endDate) {
+    public void setEndDate(String endDate) {
         this.endDate = endDate;
     }
 

@@ -31,12 +31,17 @@ employeeRepository.save(employee);
     }
 
     @Override
-    public void remove(int id) {
-employeeRepository.deleteById(id);
+    public void removeVer2(int id) {
+        employeeRepository.removerVer2(id);
     }
 
     @Override
     public Page<Employee> search(String name, Pageable pageInfo) {
         return employeeRepository.findByNameContaining(name, pageInfo);
+    }
+
+    @Override
+    public Page<Employee> findAll2(Pageable pageable) {
+        return employeeRepository.findAll2(pageable);
     }
 }

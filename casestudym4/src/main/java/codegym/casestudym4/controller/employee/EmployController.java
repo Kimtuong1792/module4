@@ -30,7 +30,7 @@ public class EmployController {
 
     @GetMapping("/employee")
     public String customerList(@PageableDefault(value = 5) Pageable pageable, Model model) {
-        model.addAttribute("employeeList", employeeService.findAll(pageable));
+        model.addAttribute("employeeList", employeeService.findAll2(pageable));
         return "employee/index";
     }
 
@@ -87,7 +87,7 @@ public class EmployController {
     }
     @PostMapping("/employee/delete")
     public String delete(@RequestParam int id, RedirectAttributes redirect) {
-        employeeService.remove(id);
+        employeeService.removeVer2(id);
         redirect.addFlashAttribute("success", "Removed customer successfully!");
         return "redirect:/employee";
     }

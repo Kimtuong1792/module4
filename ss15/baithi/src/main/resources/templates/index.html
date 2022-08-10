@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+
+<h3 align="center">Danh sách giao dịch</h3>
+<p>
+    <a th:href="@{/create}">
+       <button class="btn btn-success">+ Tạo giao dich</button>
+    </a>
+</p>
+<form action="/search">
+    Search by title:
+    <input name="search" type="text"/>
+    <select name="typeSearch">
+        <option value="">Chọn loại bất động sản</option>
+        <option value="đất">đất</option>
+        <option value="nhà và đất">nhà và đất</option>
+
+    </select>
+    <input type="submit" value="Search"/>
+</form>
+<!--<div class="notify">-->
+<!--    <div th:if="${success}">-->
+<!--        <span th:text="${success}"></span>-->
+<!--    </div>-->
+<!--</div>-->
+<table class="table">
+    <thead>
+
+    <tr style="background-color: royalblue">
+        <th>Mã giao dịch</th>
+        <th>Tên khách hàng</th>
+        <th>Ngày giao dịch</th>
+        <th>Loại dịch vụ</th>
+        <th>Đơn Giá</th>
+        <th>Diện tích</th>
+        <th>Actions</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row : ${transactionList}">
+        <td th:text="${row.id}"></td>
+        <td th:text="${row.customer.name}"></td>
+        <td th:text="${row.day}"></td>
+        <td th:text="${row.type}"></td>
+        <td th:text="${row.cost}"></td>
+        <td th:text="${row.area}"></td>
+        <td><a th:href="@{/{id}/view(id=${row.getId()})}"><button class="btn btn-warning">chi tiết</button></a>
+        <!--        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+            <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                    th:data-bs-target="'#a' + ${row.id}">
+           Xoá
+            </button>
+
+            <div class="modal fade" th:id="a + ${row.id}" data-bs-backdrop="static" data-bs-keyboard="false"
+                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form action="#" th:action="@{/delete}"
+                          method="POST">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you want delete
+                                <span class="text-info" th:text="${row.day}"></span>
+                                <input type="hidden" th:value = "${row.id}" name="id">
+                            </div>
+                            <button type="submit" class="btn btn-outline-success">Delete</button>
+                            <button type="button" class="btn btn-secondary center-pill" data-bs-dismiss="modal">Close
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </td>
+
+
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{''(page=${transactionList.number - 1})}" th:if="${transactionList.hasPrevious()}">Previous</a>
+    <span th:text="${transactionList.number + 1}"></span>/<span th:text="${transactionList.totalPages}"></span>
+    <a th:href="@{''(page=${transactionList.number + 1})}" th:if="${transactionList.hasNext()}">Next</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

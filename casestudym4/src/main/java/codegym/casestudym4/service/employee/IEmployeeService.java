@@ -15,7 +15,9 @@ public interface IEmployeeService{
 
     Optional<Employee> findById(int id);
 
-    void remove(int id);
+    void removeVer2(int id);
 
     Page<Employee> search(String name, Pageable pageInfo);
+
+    Page<Employee> findAll2(Pageable pageable);
 }

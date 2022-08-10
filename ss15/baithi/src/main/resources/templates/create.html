@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+<h2 align="center">Tạo mới giao dịch</h2>
+
+<div id="form"  style="border: 2px" class="mb-3">
+    <form th:action="@{/save}" th:object="${transactionDto}"
+          method="POST" novalidate="novalidate">
+<!--        <input type="hidden" th:field="*{id}"/>-->
+        <div class="mb-3">
+            <label class="form-label">Mã giao dịch</label>
+            <input type="text" class="form-control" th:field="*{id}" width="500">
+            <span style="color: red" th:if="${#fields.hasErrors('id')}" th:errors="*{id}"></span>
+        </div>
+        <div>
+            <label class="form-label">Tên Khách hàng</label>
+            <select th:field="*{customer}" class="form-control" >
+                <option th:each="item : ${customerList}" th:value="${item.id}" th:text="${item.name}"></option>
+            </select>
+
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ngày giao dịch</label>
+            <input type="date" class="form-control" th:field="*{day}" width="500">
+            <span style="color: red" th:if="${#fields.hasErrors('day')}" th:errors="*{day}"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Loại giao dịch</label>
+            <select name="search" th:field="*{type}">
+                <option value="">Chọn loại giao dịch</option>
+                <option value="nhà và đất">nhà đất</option>
+                <option value="đất">đất</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Đơn giá</label>
+            <input type="number" class="form-control" th:field="*{cost}" width="500">
+            <span style="color: red" th:if="${#fields.hasErrors('cost')}" th:errors="*{cost}"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">diện tích</label>
+            <input type="number" class="form-control" th:field="*{area}" width="500">
+            <span style="color: red" th:if="${#fields.hasErrors('area')}" th:errors="*{area}"></span>
+        </div>
+
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

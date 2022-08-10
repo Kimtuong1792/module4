@@ -6,17 +6,15 @@
 
 </head>
 <body>
+<div th:replace="~{/home::header}"></div>
 <h3>Employee</h3>
-<p>
     <a th:href="@{/employee/create}">
-        Add new Employee
+        <button>Add new Employee</button>
     </a>
-</p>
-
 <table class="table">
     <thead>
 
-    <tr style="background-color: #4CAF50">
+    <tr style="background-color: gold">
         <th>ID</th>
         <th>Name</th>
         <th>birthday</th>
@@ -46,8 +44,11 @@
         <td th:text="${row.position.name}"></td>
         <td th:text="${row.educationDegree.name}"></td>
         <td th:text="${row.division.name}"></td>
-        <td><a th:href="@{/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <!--        <td><a th:href="@{/{id}/delete(id=${row.getId()})}">delete</a></td>-->
+        <td><a th:href="@{/employee/{id}/edit(id=${row.getId()})}">
+            <button class="btn btn-primary" >edit
+            </button>
+        </a>
+        </td>
         <td>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                     th:data-bs-target="'#a' + ${row.id}">
@@ -68,7 +69,7 @@
                             <div class="modal-body">
                                 Do you want delete
                                 <span class="text-info" th:text="${row.name}"></span>
-                                <input type="hidden" th:value = "${row.id}" name="id">
+                                <input type="hidden" th:value="${row.id}" name="id">
                             </div>
 
                             <button type="submit" class="btn btn-outline-success">Delete</button>

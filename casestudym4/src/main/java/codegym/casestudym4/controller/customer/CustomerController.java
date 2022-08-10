@@ -1,7 +1,11 @@
 package codegym.casestudym4.controller.customer;
 
 import codegym.casestudym4.dto.customer.CustomerDto;
+import codegym.casestudym4.model.contract.Contract;
+import codegym.casestudym4.model.contract.ContractDetail;
 import codegym.casestudym4.model.customer.Customer;
+import codegym.casestudym4.service.contract.IContractDetailService;
+import codegym.casestudym4.service.contract.IContractService;
 import codegym.casestudym4.service.customer.ICustomerService;
 import codegym.casestudym4.service.customer.ICustomerTypeService;
 import org.springframework.beans.BeanUtils;
@@ -15,12 +19,18 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.List;
+
 @Controller
 public class CustomerController {
     @Autowired
     ICustomerService customerService;
     @Autowired
     ICustomerTypeService customerTypeService;
+    @Autowired
+    IContractDetailService contractDetailService;
+    @Autowired
+    IContractService contractService;
 
 
     @GetMapping("/customer")
@@ -74,6 +84,15 @@ public class CustomerController {
     }
     @PostMapping("/customer/delete")
     public String delete(@RequestParam int id, RedirectAttributes redirect) {
+        Customer customer = customerService.findById(id).get();
+        List<Contract> contract = contractService.findByCustomerId(id);
+        for (int i=0;i<contract.size();i++){
+            List<ContractDetail> contractDetailList = contractDetailService.getContractDetail(contract.get(i).getId());
+            for (int j = 0; j < contractDetailList.size(); j++) {
+                contractDetailService.remove(contractDetailList.get(j));
+            }
+            contractService.remove(contract.get(i).getId());
+        }
         customerService.remove(id);
         redirect.addFlashAttribute("success", "Removed customer successfully!");
         return "redirect:/customer";

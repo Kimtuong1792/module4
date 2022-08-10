@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<h3>Contract</h3>
+<p>
+    <a th:href="@{/contract/create}">
+        Add new contract
+    </a>
+</p>
+
+<table class="table">
+    <thead>
+
+    <tr style="background-color: gold ">
+        <th>ID</th>
+        <th>facility</th>
+        <th>customer</th>
+        <th>startDate</th>
+        <th>endDate</th>
+        <th>deposit</th>
+        <th>Total</th>
+        <th>Actions</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="row, i : ${contractList}">
+        <td th:text="${row.id}"></td>
+        <td th:text="${row.facility.name}"></td>
+        <td th:text="${row.customer.name}"></td>
+        <td th:text="${row.startDate}"></td>
+        <td th:text="${row.endDate}"></td>
+        <td th:text="${row.deposit}"></td>
+        <td th:text="${totalMoneyList.get(i.index)}"></td>
+        <td>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal">
+                +
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"  th:data-bs-target="'#a' + ${row.id}">
+                list of included services
+            </button>
+            <div class="modal fade" th:id="'a' + ${row.id}" data-bs-backdrop="static" data-bs-keyboard="false"
+                 tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <form action="#" th:action="@{/attractFacility/create}"
+                          method="POST">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <table class="table table-striped table-bordered">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Cost</th>
+                                        <th>Unit</th>
+                                        <th>Status</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                    <tr th:each="contractDetail : ${contractDetailList}">
+                                        <th:block th:each="attachFacility : ${attachFacilityList}">
+                                            <th:block
+                                                    th:if="${contractDetail.contract.getId() == row.getId() && contractDetail.attachFacility.getId() == attachFacility.getId()}">
+                                                <td th:text="${attachFacility.id}"></td>
+                                                <td th:text="${attachFacility.name}"></td>
+                                                <td th:text="${attachFacility.cost}"></td>
+                                                <td th:text="${attachFacility.unit}"></td>
+                                                <td th:text="${attachFacility.status}"></td>
+                                                <td th:text="${contractDetail.quantity}"></td>
+                                            </th:block>
+                                        </th:block>
+                                    </tr>
+                                </table>
+                            </div>
+
+<!--                            <button type="submit" class="btn btn-outline-success">Delete</button>-->
+<!--                            <button type="button" class="btn btn-secondary center-pill" data-bs-dismiss="modal">Close-->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <a th:href="@{'/contract'(page=${contractList.number - 1})}" th:if="${contractList.hasPrevious()}">Previous</a>
+    <span th:text="${contractList.number + 1}"></span>/<span th:text="${contractList.totalPages}"></span>
+    <a th:href="@{'/contract'(page=${contractList.number + 1})}" th:if="${contractList.hasNext()}">Next</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>

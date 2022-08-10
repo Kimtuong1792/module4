@@ -6,7 +6,7 @@
 
 </head>
 <body>
-
+<div th:replace="~{/home::header}"></div>
 <h3>Customer</h3>
 <p>
     <a th:href="@{/customer/create}">
@@ -42,8 +42,8 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="row : ${customerList}">
-        <td th:text="${row.id}"></td>
+    <tr th:each="row, i : ${customerList}">
+        <td th:text="${i.count} + 5 * ${customerList.number}"></td>
         <td th:text="${row.name}"></td>
         <td th:text="${row.birthday}"></td>
         <td th:if="${row.gender == 0} " th:text="Male"></td>

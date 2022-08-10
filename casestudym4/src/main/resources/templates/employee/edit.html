@@ -12,7 +12,7 @@
     </a>
 </p>
 <div class="form-select-button">
-    <form action="#" th:action="@{/employee/update}" th:object="${employDto}"
+    <form action="#" th:action="@{/employee/update}" th:object="${employeeDto}"
           method="POST" novalidate="novalidate">
         <input type="hidden" th:field="*{id}"/>
         <div>
@@ -34,7 +34,7 @@
             <label>Salary</label>
             <input type="number" th:field="*{salary}"/>
 
-        </div
+        </div>
         <div>
             <label>numberPhone</label>
             <input type="number" th:field="*{numberPhone}"/>

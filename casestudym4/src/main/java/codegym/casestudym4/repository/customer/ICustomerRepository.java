@@ -10,4 +10,6 @@ import org.springframework.data.repository.query.Param;
 public interface ICustomerRepository extends JpaRepository<Customer,Integer> {
     @Query(value = "select * from customer where name like :search", nativeQuery= true)
     Page<Customer> findByNameContaining(@Param("search") String name, Pageable pageable);
+
+
 }

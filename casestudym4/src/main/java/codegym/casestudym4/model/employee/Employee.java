@@ -17,6 +17,8 @@ public class Employee {
     private String numberPhone;
     private String email;
     private String address;
+    private Integer statusDelete=0;
+
     @ManyToOne
     @JoinColumn(name = "position_id", referencedColumnName = "id")
     private Position position;
@@ -121,6 +123,14 @@ public class Employee {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public Integer getStatusDelete() {
+        return statusDelete;
+    }
+
+    public void setStatusDelete(Integer statusDelete) {
+        this.statusDelete = statusDelete;
     }
 
     @Override
